@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import { Input, Col, FormGroup, Label, Button} from 'reactstrap'
-
+import { useHistory } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 export default class login extends Component {
+  
     render() {
+      
         return (
-              <div>
-            <Col sm={3} md={4} className="mx-auto space ">
+            <div>
+              <div className="space ">
+  <div sm={3} md={4} className="mx-auto ">
              <FormGroup>
                   <Label for="exampleEmail" sm={2}><b>Email</b> </Label>
                 <Input name="email"  className="badge-pill"/>
@@ -14,9 +18,10 @@ export default class login extends Component {
                   <Label for="exampleEmail" sm={2}><b>Password</b> </Label>
                   <Input name="password" type="password"   className="badge-pill"/>
               </FormGroup>
-              <Button className="btn  badge-pill badge-info" size="lg" block ><b>Login</b></Button>
+              <Button className="btn  badge-pill badge-info" size="lg" block onClick={event =>  window.location.href='/dashboard'}><b>Login</b></Button>
              
-             </Col>
+             </div>
+            </div>
             </div>
         )
     }

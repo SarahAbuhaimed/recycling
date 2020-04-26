@@ -5,17 +5,17 @@ import {XYPlot, YAxis, HorizontalGridLines,LabelSeries,VerticalBarSeries} from '
 export default class GlassChart extends Component {
     render() {
         const data = [
-            {x: 1,  y: 100,label:'Schools'},
-            {x: 3, y:110,label:'Parks'},
-            {x: 5, y:40,label:'malls'},
-            {x: 7, y:130,label:'Offices'},
+            {x: 1,  y: 100,label:'Riyadh'},
+            {x: 3, y:110,label:'Makkah'},
+            {x: 5, y:40,label:'Mdinah'},
+            {x: 7, y:130,label:'Dammam'},
       ]
         return (
             <div className="charts">
             <XYPlot width={300} height={300}>
             <HorizontalGridLines />
             <YAxis />
-            <VerticalBarSeries data={data} color="white"/>
+            <VerticalBarSeries data={data} />
             <LabelSeries data={data}/>
             </XYPlot>
             </div>

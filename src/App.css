@@ -4,11 +4,24 @@
 .space{
   margin-top: 13%;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.log {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-
+.back{
+  background-image: url('https://www.forgerecycling.co.uk/blog/wp-content/uploads/2018/08/bigstock-Top-view-of-white-recycle-eco-209395741-825x510.jpg');
+  height:1000px;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

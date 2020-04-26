@@ -7,14 +7,15 @@ import Dashboard from './Dashboard';
 import Chart from './Chart';
 import Complains from './Complains';
 import Enquiry from './Enquiry'
-import Login from './login'
+
+import Home from './Home'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import login from './login';
+
 export default class Navbar extends Component {
     render() {
         return (
@@ -29,7 +30,7 @@ export default class Navbar extends Component {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <li class="nav-item active">
-        <Link class="nav-link" to="/Home">Home <span class="sr-only">(current)</span></Link>
+        <Link class="nav-link" to="/home">Home <span class="sr-only">(current)</span></Link>
       </li>
       <li class="nav-item active">
         <Link class="nav-link" to="/dashboard">Dashboard <span class="sr-only">(current)</span></Link>
@@ -52,7 +53,9 @@ export default class Navbar extends Component {
 
 </nav>
 <Switch>
-
+<Route path="/home">
+            <Home />
+          </Route>
           <Route path="/dashboard">
             <Dashboard />
           </Route>

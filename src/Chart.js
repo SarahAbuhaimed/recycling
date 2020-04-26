@@ -14,7 +14,7 @@ export default class Chart extends Component {
     <div className="card text-white bg-info mb-3 ">
       <div className="card-body">
       <CityChart />
-        <h5 className="charts" >Number of requisites per city</h5>
+        <h5 className="charts" >Number of Plastic requisites per city</h5>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@ export default class Chart extends Component {
     <div className="card text-white bg-dark mb-3 ">
       <div className="card-body">
       <Glass />
-        <h5 className="charts" >Number of requisites per city</h5>
+        <h5 className="charts" >Number of Glass requisites per city</h5>
       </div>
     </div>
   </div>

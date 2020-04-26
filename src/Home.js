@@ -4,8 +4,12 @@ import Login from './login'
 export default class Home extends Component {
     render() {
         return (
-            <div>
-                 <Login />
+            <div className="back">
+            <div className="container d-flex justify-content-center">
+          
+  <Login />
+            </div>
+                
             </div>
         )
     }
