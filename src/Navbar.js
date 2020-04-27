@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 
 import React, { Component } from 'react'
 import SearchIcon from '@material-ui/icons/Search';
@@ -21,8 +22,8 @@ export default class Navbar extends Component {
         return (
             <Router>
             <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <Link class="navbar-brand"  to="/"><EcoIcon fontSize="large"  style={{ color: green[500] }}/></Link>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <Link class="navbar-brand"  to="/"><img  src="https://i.ibb.co/Dk5Q05X/Picture1.png" width="120" height="70"/></Link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

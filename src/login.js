@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { Input, Col, FormGroup, Label, Button} from 'reactstrap'
-import { useHistory } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
+
 export default class login extends Component {
   
     render() {
       
         return (
             <div>
-              <div className="space ">
+              <div className="log">
   <div sm={3} md={4} className="mx-auto ">
              <FormGroup>
                   <Label for="exampleEmail" sm={2}><b>Email</b> </Label>
